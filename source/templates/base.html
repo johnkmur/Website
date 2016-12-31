@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <div class="title_bar">
+        <title>EECS485 - Group 61 Project 1</title>
+        <h1>Spacebook</h1>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="description" content="EECS 485 Project 1">
+</head>
+<body>
+    <header class="center">
+        <h1>EECS 485 Project 1 - Group 61</h1>
+
+        <a href="{{url_for('main.main_route')}}">Home Page</a>
+        <br>
+    </header>
+    
+    <div class="center">
+    {% block content %}{% endblock %}
+    </div>
+
+    <footer class="center">
+    <br>
+    Copyright, don't steal our stuff, please ;).
+    </footer>
+
+    <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+
+</html>

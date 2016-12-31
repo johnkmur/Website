@@ -1,0 +1,44 @@
+
+.center {
+    margin:0 auto;
+    max-width: 500px;
+}
+
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white
+}
+
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+
+a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+footer {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #4862C9;
+}
+
+.list {
+    color: white;
+}

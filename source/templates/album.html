@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>ALBUM</h1>
+    <p class="important">
+    </p>
+    {% if edit %}
+    
+    <div class="list">
+        List of pictures in this album:
+    </div> 
+        <br>
+    
+        {% for picture in pictures %}
+            <form action="{{url_for('album.album_edit_route')}}" method="POST">
+                <input type="hidden" name="albumid" value="{{album_id}}">
+                <input type="hidden" name="picid" value="{{picture.picid}}">
+
+                <a id="pic_{{picture.picid}}_link" href="{{url_for('pic.pic_route',picid=picture.picid)}}"><img src="{{url_for('static', filename = picture.route)}}" class="img-rounded" alt="photo" width="250" height="250"></a>
+                <p><input type="submit" id="delete_pic_{{picture.picid}}" name="op" value="delete"></p>
+
+            </form>
+    
+        {% endfor %}
+        <form action="{{url_for('album.album_edit_route')}}" enctype='multipart/form-data' method="POST">
+            <input type="hidden" name="albumid" value="{{album_id}}">
+            <input type="file" name="file" id="file_input">
+            <input type="submit" id="file_submit" name="op" value="add">
+        </form>
+    {% else %}
+        <p>
+        <a href="{{url_for('album.album_edit_route',albumid=album_id)}}">Edit Album</a>
+        </p>
+         <div class="list">
+            List of pictures in this album:
+         </div> 
+        <br>
+        {% for picture in pictures %}
+            <a id="pic_{{picture.picid}}_link" href="{{url_for('pic.pic_route',picid=picture.picid)}}"><img src="{{url_for('static', filename = picture.route)}}" class="img-rounded" alt="photo" width="250" height="250"></a>
+    
+        {% endfor %}    
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>PIC</h1>
+    <p class="important">
+      <br>
+      
+      <img src="{{url_for('static', filename = pictures.route)}}">
+      
+      <br>
+      
+      {% if prev_id != pictures %}
+        <a href="{{url_for('pic.pic_route',picid=prev_id.picid)}}"  id="prev_pic" type="submit" value="Submit">Previous</a>
+      {% endif %}
+
+      {% if next_id != pictures %}
+        <a href="{{url_for('pic.pic_route',picid=next_id.picid)}}" id="next_pic" type="submit" value="Submit">Next</a>
+      {% endif %}
+      <br>
+      <a href="{{url_for('album.album_route',albumid=album_id)}}" id="parent_album">Back to Parent Album</a>
+    </p>
+{% endblock %}

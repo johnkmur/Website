@@ -1,0 +1,82 @@
+
+.center {
+    margin:auto auto auto auto;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    background: black;
+}
+
+.album-view {
+  display: inline-block;
+  text-align: center;
+  padding: auto 0 auto 0;
+}
+
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white
+}
+
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    margin: auto auto auto auto;
+}
+
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+
+a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+footer {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.list {
+    color: white;
+}
+
+.navbar-wrapper {
+    top: 0;
+    right: 25%;
+    width: 100% !important;
+    left: 25%;
+    z-index: 20;
+}
+
+footer {
+   position:fixed;
+   text-align: center;
+   bottom:0px;
+   height: auto;
+   width:100%;
+   background:#6699cc;
+   padding: 10px;
+}
+
+.home_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+/*# sourceMappingURL=bootstrap-theme.css.map */
+
+

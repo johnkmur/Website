@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <p class="important">
+    </p>
+
+         <div class="list">
+            List of pictures in this album:
+         </div> 
+        <br>
+        <div class="album-view">
+        {% for picture in pictures %}
+            <a id="pic_{{picture.picid}}_link" href="{{url_for('pic.pic_route',picid=picture.picid)}}"><img src="{{url_for('static', filename = picture.route)}}" class="img-rounded" alt="photo" width="250" height="250"></a>
+            <br>
+            <h4>{{picture.caption}}</h4>
+            <br>
+        {% endfor %} 
+        </div>   
+{% endblock %}

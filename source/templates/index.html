@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <p class="center">
+      Welcome to the Photo album page! This website contains photos/albums from these users:
+    </p>
+
+    {% for username in usernames %}
+    <p class="center">
+        <a id="user_albums_{{username.username}}" href="{{url_for('albums.albums_route',username=username.username)}}">{{username.username}}</a>
+    </p>
+    {% endfor %}
+
+
+{% endblock %}

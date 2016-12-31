@@ -1,10 +1,3 @@
-#Group 61
-Contributions:
+A personal website made to showcase different talents, interests, and hobbies.
 
-ranavk: sql, html/css, sql generate python file
-
-velagand: main and album python routes, html
-
-johnkmur: albums and pic python routes, html
-
-all: general updating and debugging
+The data is held in a mySQL database, accessed using Python, and displayed using HTML and CSS.
